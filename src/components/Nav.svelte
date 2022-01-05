@@ -16,4 +16,3 @@
 		<img src={hamburgerIcon} alt="hamburger icon" />
 	</div>
 </div>
-<h1>Nav Component</h1>

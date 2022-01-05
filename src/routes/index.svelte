@@ -1,4 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p class="">
-	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<script>
+	import IntroBanner from '../components/IntroBanner.svelte';
+</script>
+
+<div class="px-8">
+	<IntroBanner />
+</div>
