@@ -1,5 +1,11 @@
 <script>
 	import me from '../../static/me.jpg';
+	import Button from '../components/Button.svelte';
+	import { goto } from '$app/navigation';
+
+	const onClick = () => {
+		goto('/portfolio');
+	};
 </script>
 
 <div>
@@ -13,4 +19,5 @@
 		working remotely and have experience in remote teams. When I’m not coding, you’ll find me
 		cycling, hiking or skiing. I’d love you to check out my work.
 	</p>
+	<Button clickHandler={onClick}>GO TO PORTFOLIO</Button>
 </div>
