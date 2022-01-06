@@ -8,7 +8,7 @@
 	};
 </script>
 
-<div class="pt-24">
+<section class="pt-24">
 	<div id="aboutMe">
 		<img src={me} alt="James Hannan" />
 	</div>
@@ -22,4 +22,4 @@
 		</p>
 		<Button clickHandler={onClick}>GO TO PORTFOLIO</Button>
 	</div>
-</div>
+</section>

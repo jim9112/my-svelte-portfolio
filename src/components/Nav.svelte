@@ -1,11 +1,9 @@
 <script>
-	import logo from '../../static/logo.svg';
 	import hamburgerIcon from '../../static/icons/hamburger.svg';
 </script>
 
-<div class="flex px-8 py-8 justify-between items-center">
+<header class="flex px-8 py-8 justify-between items-center">
 	<div>
-		<!-- <img src={logo} alt="logo" /> -->
 		<h1 class="font-heading font-bold text-4xl">JH</h1>
 	</div>
 	<ul class="sm:flex gap-x-10 hidden">
@@ -16,4 +14,4 @@
 	<div class="sm:hidden">
 		<img src={hamburgerIcon} alt="hamburger icon" />
 	</div>
-</div>
+</header>

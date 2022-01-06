@@ -4,7 +4,7 @@
 	import linkedinIcon from '../../static/icons/linkedin.svg';
 </script>
 
-<div
+<footer
 	class="bg-primary-greyish-blue text-secondary-very-light-grey flex flex-col place-items-center py-14"
 >
 	<ul class="font-body text-xs text-center flex flex-col gap-8">
@@ -23,4 +23,4 @@
 			><img src={linkedinIcon} alt="linkedin icon" /></a
 		>
 	</div>
-</div>
+</footer>

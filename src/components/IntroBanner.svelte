@@ -2,7 +2,7 @@
 	import downArrows from '../../static/icons/down-arrows.svg';
 </script>
 
-<div class="flex flex-col gap-8">
+<section class="flex flex-col gap-8">
 	<img
 		srcset="static/homepage/mobile/image-homepage-hero.jpg 311w, 
         static/homepage/tablet/image-homepage-hero.jpg 688w,
@@ -24,4 +24,4 @@
 			<div class="text-center w-full">About Me</div>
 		</button>
 	</a>
-</div>
+</section>
