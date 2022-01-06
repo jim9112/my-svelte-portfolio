@@ -9,7 +9,7 @@
 </script>
 
 <div class="pt-24">
-	<div>
+	<div id="aboutMe">
 		<img src={me} alt="James Hannan" />
 	</div>
 	<div class="flex flex-col gap-8 border-t-2 border-secondary-light-grey mt-8 pt-8">
