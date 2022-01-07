@@ -4,8 +4,8 @@
 	import ContactMe from '../components/ContactMe.svelte';
 </script>
 
-<div class="px-8">
+<main class="px-8">
 	<IntroBanner />
 	<AboutMe />
 	<ContactMe />
-</div>
+</main>
