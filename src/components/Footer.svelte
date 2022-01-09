@@ -1,7 +1,7 @@
 <script>
 	import githubIcon from '/icons/github.svg';
 	import twitterIcon from '/icons/twitter.svg';
-	import linkedinIcon from '/static/icons/linkedin.svg';
+	import linkedinIcon from '/icons/linkedin.svg';
 </script>
 
 <footer
