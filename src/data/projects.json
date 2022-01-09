@@ -1,0 +1,8 @@
+{
+	"projects": [
+		{
+			"title": "DevProjectPlanner",
+			"description": "A project management application built with TypeScript, React, MaterialUI, and FireBase. Includes Task Manager, Bug Tracker, and Note Cards. Full CRUD and authentication used. At this time you need a GitHub account in order to log in to the live project."
+		}
+	]
+}

@@ -1,12 +1,12 @@
 <script>
-	import downArrows from '../../static/icons/down-arrows.svg';
+	import downArrows from '/icons/down-arrows.svg';
 </script>
 
 <section class="flex flex-col gap-8">
 	<img
-		srcset="static/homepage/mobile/image-homepage-hero.jpg 311w, 
-        static/homepage/tablet/image-homepage-hero.jpg 688w,
-        static/homepage/desktop/image-homepage-hero.jpg 1110w"
+		srcset="/homepage/mobile/image-homepage-hero.jpg 311w, 
+        /homepage/tablet/image-homepage-hero.jpg 688w,
+        /homepage/desktop/image-homepage-hero.jpg 1110w"
 		sizes="90vw"
 		alt="hero"
 	/>

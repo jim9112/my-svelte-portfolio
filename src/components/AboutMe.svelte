@@ -1,5 +1,5 @@
 <script>
-	import me from '../../static/me.jpg';
+	import me from '/me.jpg';
 	import Button from '../components/Button.svelte';
 	import { goto } from '$app/navigation';
 
