@@ -2,7 +2,6 @@
 	import ProjectPreview from '../components/ProjectPreview.svelte';
 	import ContactMe from '../components/ContactMe.svelte';
 	import { projects } from '../stores/projects';
-	console.log($projects);
 </script>
 
 <main>

@@ -1,4 +1,5 @@
 <script>
+	import Heading2 from './global/Heading2.svelte';
 	import downArrows from '/icons/down-arrows.svg';
 </script>
 
@@ -10,9 +11,7 @@
 		sizes="90vw"
 		alt="hero"
 	/>
-	<h2 class="font-heading font-bold text-4xl">
-		Hey, I’m James Hannan and I love building beautiful websites
-	</h2>
+	<Heading2>Hey, I’m James Hannan and I love building beautiful websites</Heading2>
 	<a href="#aboutMe">
 		<button
 			class="bg-primary-dark-blue text-secondary-very-light-grey w-[200px] flex items-center font-body text-xs"
