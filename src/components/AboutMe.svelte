@@ -2,6 +2,7 @@
 	import me from '/me.jpg';
 	import Button from './global/Button.svelte';
 	import Heading2 from '../components/global/Heading2.svelte';
+	import Body1 from './global/Body1.svelte';
 	import { goto } from '$app/navigation';
 
 	const onClick = () => {
@@ -15,12 +16,12 @@
 	</div>
 	<div class="flex flex-col gap-8 border-y-2 border-secondary-light-grey mt-8 py-8">
 		<Heading2>About Me</Heading2>
-		<p class="font-body text-base">
+		<Body1>
 			I’m a junior front-end developer looking for a new role in an exciting company. I mostly use
 			React, but I can adapt to whatever tools are required. I’m based in Wilton, NH, but I’m happy
 			working remotely and have experience in remote teams. When I’m not coding, you’ll find me
 			cycling, hiking or skiing. I’d love you to check out my work.
-		</p>
+		</Body1>
 		<Button clickHandler={onClick}>GO TO PORTFOLIO</Button>
 	</div>
 </section>
