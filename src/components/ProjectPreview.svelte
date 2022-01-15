@@ -2,6 +2,7 @@
 	import Button from './global/Button.svelte';
 	import Heading2 from './global/Heading2.svelte';
 	import Body1 from './global/Body1.svelte';
+	import { goto } from '$app/navigation';
 
 	interface IProject {
 		mainImage: string;
@@ -16,7 +17,7 @@
 
 	// click handler for view project button
 	const clickHandler = () => {
-		console.log('view post button click');
+		goto(`/project/${index}`);
 	};
 	const styles = {
 		even: 'sm:flex-row',

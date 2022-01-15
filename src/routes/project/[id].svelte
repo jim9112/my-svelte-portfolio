@@ -10,10 +10,13 @@
 </script>
 
 <script lang="ts">
+	import { projects } from '../../stores/projects';
 	export let id: string;
+	console.log($projects[id]);
+	const project = $projects[id];
 </script>
 
 <div>
 	<h1>Individual project page</h1>
-	{id}
+	{project.title}
 </div>
