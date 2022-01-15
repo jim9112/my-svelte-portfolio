@@ -6,8 +6,8 @@
 
 <main>
 	<div class="px-8 flex flex-col gap-16">
-		{#each $projects as project}
-			<ProjectPreview {project} />
+		{#each $projects as project, i}
+			<ProjectPreview {project} index={i} />
 		{/each}
 	</div>
 
