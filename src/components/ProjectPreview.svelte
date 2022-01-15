@@ -19,6 +19,8 @@
 	const clickHandler = () => {
 		goto(`/project/${index}`);
 	};
+
+	// dynamic styling
 	const styles = {
 		even: 'sm:flex-row',
 		odd: 'sm:flex-row-reverse'
