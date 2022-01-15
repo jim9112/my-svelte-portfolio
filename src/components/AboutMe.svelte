@@ -10,11 +10,13 @@
 	};
 </script>
 
-<section class="pt-24">
-	<div id="aboutMe">
-		<img src={me} alt="James Hannan" />
+<section class="pt-24 flex flex-col sm:flex-row sm:gap-16">
+	<div id="aboutMe" class="sm:min-w-max">
+		<img class="sm:object-cover sm:w-[281px] sm:h-[600px]" src={me} alt="James Hannan" />
 	</div>
-	<div class="flex flex-col gap-8 border-y-2 border-secondary-light-grey mt-8 py-8">
+	<div
+		class="flex flex-col gap-8 border-y-2 border-secondary-light-grey mt-8 sm:mt-0 py-8 sm:pt-12"
+	>
 		<Heading2>About Me</Heading2>
 		<Body1>
 			I’m a junior front-end developer looking for a new role in an exciting company. I mostly use

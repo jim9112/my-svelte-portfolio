@@ -2,7 +2,17 @@
 	import Button from './global/Button.svelte';
 	import Heading2 from './global/Heading2.svelte';
 	import Body1 from './global/Body1.svelte';
-	export let project;
+
+	interface IProject {
+		mainImage: string;
+		title: string;
+		description: string;
+	}
+
+	// individual project object
+	export let project: IProject;
+
+	// click handler for view project button
 	const clickHandler = () => {
 		console.log('view post button click');
 	};

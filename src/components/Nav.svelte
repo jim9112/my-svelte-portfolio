@@ -15,11 +15,11 @@
 	<div>
 		<h1 class="font-heading font-bold text-4xl">JH</h1>
 	</div>
-	<ul class="sm:flex gap-x-10 hidden">
-		<li>HOME</li>
-		<li>PORTFOLIO</li>
-		<li>CONTACT ME</li>
-	</ul>
+	<nav class="sm:flex gap-x-10 hidden">
+		<a href="/">HOME</a>
+		<a href="/portfolio">PORTFOLIO</a>
+		<a href="/contact-me">CONTACT ME</a>
+	</nav>
 	{#if !modalopen}
 		<div class="sm:hidden">
 			<img on:click={toggleModal} class="cursor-pointer" src={hamburgerIcon} alt="hamburger icon" />
