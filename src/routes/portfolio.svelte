@@ -5,7 +5,7 @@
 </script>
 
 <main>
-	<div class="px-8 flex flex-col gap-16">
+	<div class="px-8 flex flex-col gap-16 items-center">
 		{#each $projects as project, i}
 			<ProjectPreview {project} index={i} />
 		{/each}

@@ -22,12 +22,16 @@
 
 	// dynamic styling
 	const styles = {
-		even: 'sm:flex-row',
-		odd: 'sm:flex-row-reverse'
+		even: 'sm:flex-row lg:pr-36',
+		odd: 'sm:flex-row-reverse lg:pl-36'
 	};
 </script>
 
-<div class={`flex flex-col sm:gap-16 ${index % 2 === 0 ? styles.even : styles.odd}`}>
+<div
+	class={`flex flex-col sm:gap-8 lg:gap-[125px] ${
+		index % 2 === 0 ? styles.even : styles.odd
+	} lg:max-w-7xl `}
+>
 	<img
 		class="sm:object-cover sm:w-[339px] sm:h-[319px"
 		src={project.mainImage}
