@@ -23,9 +23,11 @@
 </script>
 
 <section class="px-8">
-	<img src={project.mainImage} alt="" />
-	<div class="border-y-2 border-secondary-light-grey py-6">
-		<Heading2>{project.title}</Heading2>
-		<Body2>{project.description}</Body2>
-	</div>
+	{#if project.data}
+		<img src={project.data.featured_image.url} alt="" />
+		<div class="border-y-2 border-secondary-light-grey py-6">
+			<Heading2>{project.data.project_name[0].text}</Heading2>
+			<Body2>{project.data.project_description[0].text}</Body2>
+		</div>
+	{/if}
 </section>
