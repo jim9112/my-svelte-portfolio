@@ -5,16 +5,24 @@
 	import { goto } from '$app/navigation';
 
 	interface IProject {
-		mainImage: string;
-		title: string;
-		description: string;
+		data: {
+			featured_image: {
+				url: string;
+			};
+			project_name: {
+				text: string;
+			}[];
+			project_description: {
+				text: string;
+			}[];
+		};
 	}
 
 	// individual project object
 	export let project: IProject;
 
 	export let index: number;
-
+	$: console.log(project);
 	// click handler for view project button
 	const clickHandler = () => {
 		goto(`/project/${index}`);
@@ -34,12 +42,12 @@
 >
 	<img
 		class="sm:object-cover sm:w-[339px] sm:h-[319px"
-		src={project.mainImage}
-		alt={project.title}
+		src={project.data.featured_image.url}
+		alt={project.data.project_name[0].text}
 	/>
 	<div class="border-y-2 border-secondary-light-grey mt-8 py-6 flex flex-col gap-6 sm:mt-0">
-		<Heading2>{project.title}</Heading2>
-		<Body1>{project.description}</Body1>
+		<Heading2>{project.data.project_name[0].text}</Heading2>
+		<Body1>{project.data.project_description[0].text}</Body1>
 		<Button {clickHandler}>VIEW PROJECT</Button>
 	</div>
 </div>
