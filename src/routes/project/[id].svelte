@@ -11,23 +11,39 @@
 </script>
 
 <script lang="ts">
-	import { projects } from '../../stores/projects';
 	import Heading2 from '../../components/global/Heading2.svelte';
 	import Body2 from '../../components/global/Body2.svelte';
+	import Button from '../../components/global/Button.svelte';
+	import client from '../../utils/client';
+	import { goto } from '$app/navigation';
 	export let id: string;
 
+	let loading = true;
+	let projects;
+	let project;
+
+	const getData = async () => {
+		projects = await client.getAllByType('project');
+		project = projects[id];
+		loading = false;
+	};
+
+	getData();
 	// delete after page is built
-	console.log($projects[id]);
 	// get project to display from global state
-	const project = $projects[id];
+
+	const clickHandler = () => {
+		goto(project.data.live_site_link.url);
+	};
 </script>
 
 <section class="px-8">
-	{#if project.data}
+	{#if !loading}
 		<img src={project.data.featured_image.url} alt="" />
 		<div class="border-y-2 border-secondary-light-grey py-6">
 			<Heading2>{project.data.project_name[0].text}</Heading2>
 			<Body2>{project.data.project_description[0].text}</Body2>
+			<Button {clickHandler}>Visit Website</Button>
 		</div>
 	{/if}
 </section>
