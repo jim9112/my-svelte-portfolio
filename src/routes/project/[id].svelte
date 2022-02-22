@@ -46,7 +46,7 @@
 			<div class="border-y-2 border-secondary-light-grey py-6 w-[350px]">
 				<Heading2>{project.data.project_name[0].text}</Heading2>
 				<Body2>{project.data.project_description[0].text}</Body2>
-				<div class="flex gap-2 pt-5">
+				<div class="flex gap-2 py-5">
 					<a href={project.data.live_site_link.url} target="blank"
 						><LinkText>VISIT WEBSITE</LinkText></a
 					>
