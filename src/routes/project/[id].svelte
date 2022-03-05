@@ -17,14 +17,13 @@
 <script lang="ts">
 	import Heading2 from '../../components/global/Heading2.svelte';
 	import Body2 from '../../components/global/Body2.svelte';
-	import LinkText from '../../components/project-page/LinkText.svelte';
 	import ProjectSummary from '../../components/project-page/ProjectSummary.svelte';
 	export let id: string;
 	export let projects;
 
 	// get project for current page
 	let project = projects[id];
-	console.log(project);
+	// console.log(project);
 </script>
 
 <section class="px-40">
