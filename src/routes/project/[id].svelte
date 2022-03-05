@@ -18,20 +18,13 @@
 	import Heading2 from '../../components/global/Heading2.svelte';
 	import Body2 from '../../components/global/Body2.svelte';
 	import LinkText from '../../components/project-page/LinkText.svelte';
-	import { dataset_dev } from 'svelte/internal';
+	import ProjectSummary from '../../components/project-page/ProjectSummary.svelte';
 	export let id: string;
 	export let projects;
 
+	// get project for current page
 	let project = projects[id];
 	console.log(project);
-
-	// delete after page is built
-	// get project to display from global state
-
-	const clickHandler = () => {
-		// goto(project.data.live_site_link.url);
-		console.log('click');
-	};
 </script>
 
 <section class="px-40">
@@ -44,22 +37,13 @@
 			/>
 		</div>
 		<div class="py-28 flex gap-10">
-			<div class="border-y-2 border-secondary-light-grey py-6 min-w-[400px]">
-				<Heading2>{project?.data?.project_name[0]?.text}</Heading2>
-				<Body2>{project?.data?.project_description[0]?.text}</Body2>
-				<div class="flex gap-2 py-5">
-					{#if project.data.live_site_link.url}
-						<a href={project.data.live_site_link.url} target="blank"
-							><LinkText>VISIT WEBSITE</LinkText></a
-						>
-					{/if}
-					{#if project.data.github_repo_link}
-						<a href={project.data.github_repo_link.url} target="blank"
-							><LinkText>VISIT REPO</LinkText></a
-						>
-					{/if}
-				</div>
-			</div>
+			<ProjectSummary
+				projectDescription={project?.data?.project_description[0]?.text}
+				projectName={project?.data?.project_name[0]?.text}
+				liveSiteLink={project?.data?.live_site_link?.url}
+				githubRepoLink={project?.data?.github_repo_link?.url}
+				technologiesUsed={project.data?.technologies_used}
+			/>
 			<div>
 				{#if project.data.project_background}
 					<Heading2>Project Background</Heading2>
