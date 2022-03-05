@@ -15,9 +15,11 @@
 </script>
 
 <script lang="ts">
-	import Heading2 from '../../components/global/Heading2.svelte';
-	import Body2 from '../../components/global/Body2.svelte';
 	import ProjectSummary from '../../components/project-page/ProjectSummary.svelte';
+	import ProjectBackground from '../../components/project-page/ProjectBackground.svelte';
+	import ContactMe from '../../components/ContactMe.svelte';
+	import ProjectNav from '../../components/project-page/ProjectNav.svelte';
+
 	export let id: string;
 	export let projects;
 
@@ -43,12 +45,12 @@
 				githubRepoLink={project?.data?.github_repo_link?.url}
 				technologiesUsed={project.data?.technologies_used}
 			/>
-			<div>
-				{#if project.data.project_background}
-					<Heading2>Project Background</Heading2>
-					<Body2>{project.data.project_background}</Body2>
-				{/if}
-			</div>
+			<ProjectBackground
+				projectBackground={project.data.project_background}
+				staticPreviews={project.data.static_previews}
+			/>
 		</div>
 	{/if}
+	<ProjectNav />
+	<ContactMe />
 </section>
