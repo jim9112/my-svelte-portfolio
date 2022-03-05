@@ -53,7 +53,7 @@
 							><LinkText>VISIT WEBSITE</LinkText></a
 						>
 					{/if}
-					{#if project.data.github_repo_link_url}
+					{#if project.data.github_repo_link}
 						<a href={project.data.github_repo_link.url} target="blank"
 							><LinkText>VISIT REPO</LinkText></a
 						>
