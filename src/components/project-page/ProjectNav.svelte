@@ -1,4 +1,6 @@
 <script lang="ts">
+	import arrowLeft from '/icons/arrow-left.svg';
+	import arrowRight from '/icons/arrow-right.svg';
 	interface INav {
 		id: number;
 		name: string;
@@ -7,8 +9,31 @@
 	export let next: INav;
 </script>
 
-<div>
-	<h2>Nav Element</h2>
-	<a href={`/project/${prev.id.toString()}`}>Previous Project, {prev.name}</a>
-	<a href={`/project/${next.id.toString()}`}>Next Project, {next.name}</a>
+<div class="grid grid-cols-2">
+	<div>
+		<a href={`/project/${prev.id.toString()}`}>
+			<div class="flex gap-8">
+				<div class="grid place-items-center">
+					<img src={arrowLeft} alt="left arrow" />
+				</div>
+				<div class="flex flex-col">
+					<span class="text-4xl">{prev.name}</span>
+					<span>Previous Project</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div>
+		<a href={`/project/${next.id.toString()}`}>
+			<div class="flex justify-end gap-8">
+				<div class="flex flex-col text-right">
+					<span class="text-4xl">{next.name}</span>
+					<span>Next Project</span>
+				</div>
+				<div class="grid place-items-center">
+					<img src={arrowRight} alt="right arrow" />
+				</div>
+			</div>
+		</a>
+	</div>
 </div>

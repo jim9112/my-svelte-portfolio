@@ -2,6 +2,7 @@
 	import LinkText from './LinkText.svelte';
 	import Heading2 from '../global/Heading2.svelte';
 	import Body2 from '../global/Body2.svelte';
+	import { afterUpdate } from 'svelte';
 
 	export let liveSiteLink: string;
 	export let githubRepoLink: string;
@@ -11,9 +12,15 @@
 
 	let techList: string;
 
-	if (technologiesUsed) {
-		techList = technologiesUsed.map((tech) => tech.technology).join(' / ');
-	}
+	const updateTechlist = () => {
+		if (technologiesUsed) {
+			techList = technologiesUsed.map((tech) => tech.technology).join(' / ');
+		}
+	};
+
+	updateTechlist();
+
+	afterUpdate(() => updateTechlist());
 </script>
 
 <div class="flex flex-col gap-5 border-y-2 border-secondary-light-grey py-6 min-w-[400px] h-fit">
