@@ -9,8 +9,8 @@
 	export let next: INav;
 </script>
 
-<div class="grid grid-cols-2">
-	<div>
+<nav class="grid grid-cols-2 border-y-2 border-secondary-light-grey divide-x-2">
+	<div class="py-8">
 		<a href={`/project/${prev.id.toString()}`}>
 			<div class="flex gap-8">
 				<div class="grid place-items-center">
@@ -23,7 +23,7 @@
 			</div>
 		</a>
 	</div>
-	<div>
+	<div class="py-8">
 		<a href={`/project/${next.id.toString()}`}>
 			<div class="flex justify-end gap-8">
 				<div class="flex flex-col text-right">
@@ -36,4 +36,4 @@
 			</div>
 		</a>
 	</div>
-</div>
+</nav>
