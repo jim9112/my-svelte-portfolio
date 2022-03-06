@@ -19,33 +19,42 @@
 	import ProjectBackground from '../../components/project-page/ProjectBackground.svelte';
 	import ContactMe from '../../components/ContactMe.svelte';
 	import ProjectNav from '../../components/project-page/ProjectNav.svelte';
-
+	import { afterUpdate } from 'svelte';
 	export let id: string;
 	export let projects;
-
 	// get project for current page
 	let project = projects[id];
 	// console.log(project);
-	const idInt = parseInt(id);
-	const prev = { id: 0, name: '' };
-	const next = { id: 0, name: '' };
-	if (idInt - 1 < 0) {
-		prev.id = projects.length - 1;
-		prev.name = projects[projects.length - 1]?.data?.project_name[0]?.text;
-	} else {
-		prev.id = idInt - 1;
-		prev.name = projects[idInt - 1]?.data?.project_name[0]?.text;
-	}
-	if (idInt + 1 > projects.length - 1) {
-		next.id = 0;
-		next.name = projects[0]?.data?.project_name[0]?.text;
-	} else {
-		next.id = idInt + 1;
-		next.name = projects[idInt + 1]?.data?.project_name[0]?.text;
-	}
-	console.log(projects);
-	console.log(prev);
-	console.log(next);
+	let idInt = parseInt(id);
+
+	const updatVariables = () => {
+		project = projects[id];
+		idInt = parseInt(id);
+
+		if (idInt === 0) {
+			prev.id = projects.length - 1;
+			prev.name = projects[projects.length - 1]?.data?.project_name[0]?.text;
+		} else {
+			prev.id = idInt - 1;
+			prev.name = projects[idInt - 1]?.data?.project_name[0]?.text;
+		}
+		if (idInt + 1 > projects.length - 1) {
+			next.id = 0;
+			next.name = projects[0]?.data?.project_name[0]?.text;
+		} else {
+			next.id = idInt + 1;
+			next.name = projects[idInt + 1]?.data?.project_name[0]?.text;
+		}
+	};
+
+	let prev = { id: 0, name: '' };
+	let next = { id: 0, name: '' };
+
+	updatVariables();
+
+	afterUpdate(() => {
+		updatVariables();
+	});
 </script>
 
 <section class="px-40">
@@ -71,6 +80,6 @@
 			/>
 		</div>
 	{/if}
-	<ProjectNav />
+	<ProjectNav {prev} {next} />
 	<ContactMe />
 </section>
