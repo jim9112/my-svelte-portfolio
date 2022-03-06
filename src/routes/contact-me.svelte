@@ -33,14 +33,30 @@
 			<Heading2>Contact Me</Heading2>
 		</div>
 		<div>
-			<form class="flex flex-col">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" />
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" />
-				<label for="message">Message</label>
-				<textarea style="resize: none;" name="message" id="message" rows="5" />
-				<input type="submit" value="SEND MESSAGE" />
+			<form class="flex flex-col gap-6">
+				<div class="flex flex-col gap-2">
+					<label for="name">Name</label>
+					<input class="bg-secondary-light-grey h-12" type="text" name="name" id="name" />
+				</div>
+				<div class="flex flex-col gap-2">
+					<label for="email">Email</label>
+					<input class="bg-secondary-light-grey h-12" type="email" name="email" id="email" />
+				</div>
+				<div class="flex flex-col gap-2">
+					<label for="message">Message</label>
+					<textarea
+						class="bg-secondary-light-grey"
+						style="resize: none;"
+						name="message"
+						id="message"
+						rows="5"
+					/>
+				</div>
+				<input
+					class="bg-primary-dark-blue w-fit text-secondary-light-grey py-4 px-9"
+					type="submit"
+					value="SEND MESSAGE"
+				/>
 			</form>
 		</div>
 	</section>
