@@ -16,7 +16,7 @@
 				<div class="grid place-items-center">
 					<img src={arrowLeft} alt="left arrow" />
 				</div>
-				<div class="flex flex-col">
+				<div class="flex flex-col hover:text-primary-cyan">
 					<span class="text-4xl">{prev.name}</span>
 					<span>Previous Project</span>
 				</div>
@@ -26,7 +26,7 @@
 	<div class="py-8">
 		<a href={`/project/${next.id.toString()}`}>
 			<div class="flex justify-end gap-8">
-				<div class="flex flex-col text-right">
+				<div class="flex flex-col text-right hover:text-primary-cyan">
 					<span class="text-4xl">{next.name}</span>
 					<span>Next Project</span>
 				</div>
