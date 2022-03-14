@@ -12,7 +12,7 @@
 <nav class="grid grid-cols-2 border-y-2 border-secondary-light-grey divide-x-2">
 	<div class="py-8">
 		<a href={`/project/${prev.id.toString()}`}>
-			<div class="flex flex-col-reverse lg:flex-row gap-8">
+			<div class="flex flex-col lg:flex-row gap-8">
 				<div class="grid place-items-center">
 					<img src={arrowLeft} alt="left arrow" />
 				</div>
@@ -25,7 +25,7 @@
 	</div>
 	<div class="py-8">
 		<a href={`/project/${next.id.toString()}`}>
-			<div class="flex flex-col lg:flex-row justify-end gap-8">
+			<div class="flex flex-col-reverse lg:flex-row justify-end gap-8">
 				<div class="flex flex-col text-right hover:text-primary-cyan">
 					<span class="text-lg lg:text-4xl">{next.name}</span>
 					<span>Next Project</span>
