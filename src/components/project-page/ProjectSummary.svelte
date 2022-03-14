@@ -23,7 +23,9 @@
 	afterUpdate(() => updateTechlist());
 </script>
 
-<div class="flex flex-col gap-5 border-y-2 border-secondary-light-grey py-6 min-w-[400px] h-fit">
+<div
+	class="flex flex-col gap-5 border-y-2 border-secondary-light-grey py-6 min-w-full lg:min-w-[400px] h-fit"
+>
 	<Heading2>{projectName}</Heading2>
 	<Body2>{projectDescription}</Body2>
 	{#if techList}

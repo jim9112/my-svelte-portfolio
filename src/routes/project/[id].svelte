@@ -57,7 +57,7 @@
 	});
 </script>
 
-<section class="px-40">
+<section class="px-3 lg:px-40">
 	{#if project}
 		<div class="h-[500px] w-full relative">
 			<img
@@ -66,7 +66,7 @@
 				alt=""
 			/>
 		</div>
-		<div class="py-28 flex gap-10">
+		<div class="py-28 flex flex-col md:flex-row gap-10">
 			<ProjectSummary
 				projectDescription={project?.data?.project_description[0]?.text}
 				projectName={project?.data?.project_name[0]?.text}
