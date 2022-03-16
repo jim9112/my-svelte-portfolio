@@ -1,5 +1,5 @@
 <script>
-	import me from '/me.jpg';
+	import me from '../../static/me.jpg';
 	import Button from './global/Button.svelte';
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body1 from './global/Body1.svelte';
