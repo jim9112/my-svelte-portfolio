@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body2 from '../components/global/Body2.svelte';
-	import GithubDarkIcon from '/icons/github-dark.svg';
+	import GithubDarkIcon from '../../static/icons/github-dark.svg';
 	import TwitterDarkIcon from '/icons/twitter-dark.svg';
 	import LinkedinDarkIcon from '/icons/linkedin-dark.svg';
 </script>
