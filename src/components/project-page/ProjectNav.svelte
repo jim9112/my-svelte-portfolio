@@ -1,6 +1,6 @@
 <script lang="ts">
-	import arrowLeft from '/icons/arrow-left.svg';
-	import arrowRight from '/icons/arrow-right.svg';
+	import arrowLeft from '../../../static/icons/arrow-left.svg';
+	import arrowRight from '../../../static/icons/arrow-right.svg';
 	interface INav {
 		id: number;
 		name: string;

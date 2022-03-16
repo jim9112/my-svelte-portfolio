@@ -1,6 +1,6 @@
 <script>
 	import Heading2 from './global/Heading2.svelte';
-	import downArrows from '/icons/down-arrows.svg';
+	import downArrows from '../../static/icons/down-arrows.svg';
 </script>
 
 <section class="flex flex-col gap-8 relative">
