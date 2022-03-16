@@ -2,8 +2,8 @@
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body2 from '../components/global/Body2.svelte';
 	import GithubDarkIcon from '../../static/icons/github-dark.svg';
-	import TwitterDarkIcon from '/icons/twitter-dark.svg';
-	import LinkedinDarkIcon from '/icons/linkedin-dark.svg';
+	import TwitterDarkIcon from '../../static/icons/twitter-dark.svg';
+	import LinkedinDarkIcon from '../../static/icons/linkedin-dark.svg';
 </script>
 
 <main class="px-3 lg:px-40">

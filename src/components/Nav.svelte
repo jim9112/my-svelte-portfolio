@@ -1,7 +1,7 @@
 <script>
 	import MenuModal from './MenuModal.svelte';
-	import hamburgerIcon from '/icons/hamburger.svg';
-	import closeIcon from '/icons/close.svg';
+	import hamburgerIcon from '../../static/icons/hamburger.svg';
+	import closeIcon from '../../static/icons/close.svg';
 	let modalopen = false;
 	const toggleModal = () => {
 		modalopen = !modalopen;
