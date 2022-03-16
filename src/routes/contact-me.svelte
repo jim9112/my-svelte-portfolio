@@ -13,18 +13,25 @@
 		</div>
 		<div class="flex flex-col gap-6">
 			<Body2>
-				I’d love to hear about what you’re working on and how I could help. I’m currently looking
-				for a new role and am open to a wide range of opportunities. My preference would be to find
-				a position in a company in the Southern New Hampshore / Greater Boston area, but I’m also
-				happy to hear about opportunites that don’t fit that description. I’m a hard-working and
-				positive person who will always approach each task with a sense of purpose and attention to
-				detail. Please do feel free to check out my online profiles below and get in touch using the
-				form.
+				I’d love to hear about what you’re working on and how I could help. I’m currently open to
+				hearing about new employment opportunities or if you think I can help your company in a
+				freelance capacity. My preference would be to work with a company in the Southern New
+				Hampshore / Greater Boston area, but I’m also happy to hear about opportunites that don’t
+				fit that description. I’m a hard-working and positive person who will always approach each
+				task with a sense of purpose and attention to detail. Please do feel free to check out my
+				online profiles below and get in touch using the form, or reach out on one of the social
+				networks linked below.
 			</Body2>
-			<div class="flex gap-4">
-				<img src={GithubDarkIcon} alt="Github Icon" />
-				<img src={TwitterDarkIcon} alt="Twitter Icon" />
-				<img src={LinkedinDarkIcon} alt="Linkedin Icon" />
+			<div class="flex gap-4 mt-14 sm:mt-0">
+				<a href="https://github.com/jim9112" target="blank"
+					><img src={GithubDarkIcon} alt="github icon" /></a
+				>
+				<a href="https://twitter.com/jim9112" target="blank"
+					><img src={TwitterDarkIcon} alt="twitter icon" /></a
+				>
+				<a href="https://www.linkedin.com/in/james-hannan-811771144/" target="blank"
+					><img src={LinkedinDarkIcon} alt="linkedin icon" /></a
+				>
 			</div>
 		</div>
 	</section>
@@ -33,7 +40,7 @@
 			<Heading2>Contact Me</Heading2>
 		</div>
 		<div>
-			<form class="flex flex-col gap-6">
+			<form class="flex flex-col gap-6" name="contact" method="POST" data-netlify="true">
 				<div class="flex flex-col gap-2">
 					<label for="name">Name</label>
 					<input class="bg-secondary-light-grey h-12" type="text" name="name" id="name" />

@@ -19,10 +19,10 @@
 	>
 		<Heading2>About Me</Heading2>
 		<Body1>
-			I’m a junior front-end developer looking for a new role in an exciting company. I mostly use
-			React, but I can adapt to whatever tools are required. I’m based in Wilton, NH, but I’m happy
-			working remotely and have experience in remote teams. When I’m not coding, you’ll find me
-			cycling, hiking or skiing. I’d love you to check out my work.
+			I’m a junior front-end developer based in Wilton, NH. I mostly use React, but I can adapt to
+			whatever tools are required. I have experience working in HTML, CSS, JavaScript, TypeScript,
+			WordPress, and PHP. When I’m not coding, you’ll find me cycling, hiking or skiing. I’d love
+			you to check out my work.
 		</Body1>
 		<Button clickHandler={onClick}>GO TO PORTFOLIO</Button>
 	</div>
