@@ -22,7 +22,6 @@
 	export let project: IProject;
 
 	export let index: number;
-	$: console.log(project);
 	// click handler for view project button
 	const clickHandler = () => {
 		goto(`/project/${index}`);
