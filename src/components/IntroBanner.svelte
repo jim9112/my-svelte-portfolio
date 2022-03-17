@@ -14,7 +14,7 @@
 	<div
 		class="flex flex-col gap-8 sm:absolute sm:bottom-0 sm:left-0 sm:bg-white sm:w-[518px] sm:pt-14 sm:pr-14"
 	>
-		<Heading2>Hey, I’m James Hannan and I love building beautiful websites</Heading2>
+		<Heading2>Hey, I’m Jimmy Hannan and I love building beautiful websites</Heading2>
 		<a
 			href="#aboutMe"
 			class="bg-primary-dark-blue text-secondary-very-light-grey w-[200px] flex items-center font-body text-xs"
