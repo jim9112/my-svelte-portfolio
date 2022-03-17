@@ -17,12 +17,11 @@
 	export let projects;
 </script>
 
-<main>
+<main class="px-8 lg:px-40">
 	<div class="px-8 flex flex-col gap-16 items-center">
 		{#each projects as project, i}
 			<ProjectPreview {project} index={i} />
 		{/each}
 	</div>
-
 	<ContactMe />
 </main>
