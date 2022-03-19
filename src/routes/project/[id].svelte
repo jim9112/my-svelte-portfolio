@@ -66,7 +66,7 @@
 				alt=""
 			/>
 		</div>
-		<div class="py-28 flex flex-col md:flex-row gap-10">
+		<div class="py-28 flex flex-col lg:flex-row gap-10">
 			<ProjectSummary
 				projectDescription={project?.data?.project_description[0]?.text}
 				projectName={project?.data?.project_name[0]?.text}
