@@ -40,7 +40,13 @@
 			<Heading2>Contact Me</Heading2>
 		</div>
 		<div>
-			<form class="flex flex-col gap-6" name="contact" method="POST" data-netlify="true">
+			<form
+				class="flex flex-col gap-6"
+				name="contact"
+				method="POST"
+				data-netlify="true"
+				netlify-honeypot="bot-field"
+			>
 				<div class="flex flex-col gap-2">
 					<label for="name">Name</label>
 					<input class="bg-secondary-light-grey h-12" type="text" name="name" id="name" />
