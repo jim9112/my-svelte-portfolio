@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script lang="ts">
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body2 from '../components/global/Body2.svelte';
@@ -42,11 +46,14 @@
 		<div>
 			<form
 				class="flex flex-col gap-6"
+				id="contact"
 				name="contact"
 				method="POST"
 				data-netlify="true"
 				netlify-honeypot="bot-field"
 			>
+				<input type="hidden" name="form-name" value="contact" />
+				<input type="text" name="bot-field" style="opacity: 0" />
 				<div class="flex flex-col gap-2">
 					<label for="name">Name</label>
 					<input class="bg-secondary-light-grey h-12" type="text" name="name" id="name" />
