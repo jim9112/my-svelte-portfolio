@@ -56,11 +56,25 @@
 				<input type="text" name="bot-field" style="opacity: 0" />
 				<div class="flex flex-col gap-2">
 					<label for="name">Name</label>
-					<input class="bg-secondary-light-grey h-12" type="text" name="name" id="name" />
+					<input
+						class="bg-secondary-light-grey h-12"
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Jane Doe"
+						required
+					/>
 				</div>
 				<div class="flex flex-col gap-2">
 					<label for="email">Email</label>
-					<input class="bg-secondary-light-grey h-12" type="email" name="email" id="email" />
+					<input
+						class="bg-secondary-light-grey h-12"
+						type="email"
+						name="email"
+						id="email"
+						placeholder="jane@sample.org"
+						required
+					/>
 				</div>
 				<div class="flex flex-col gap-2">
 					<label for="message">Message</label>
@@ -70,6 +84,8 @@
 						name="message"
 						id="message"
 						rows="5"
+						required
+						placeholder="A short description of what your looking for"
 					/>
 				</div>
 				<input
