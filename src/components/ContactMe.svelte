@@ -1,11 +1,6 @@
 <script>
-	import Button from './global/Button.svelte';
+	import LinkText from './global/LinkText.svelte';
 	import Heading2 from './global/Heading2.svelte';
-	import { goto } from '$app/navigation';
-
-	const onClick = () => {
-		goto('/contact-me');
-	};
 </script>
 
 <section
@@ -15,5 +10,5 @@
 		<Heading2>Interested in doing a project together?</Heading2>
 	</div>
 	<div class="hidden grow sm:block h-[1px] bg-secondary-light-grey" />
-	<Button clickHandler={onClick}>CONTACT ME</Button>
+	<a href="/contact-me"><LinkText>CONTACT ME</LinkText></a>
 </section>

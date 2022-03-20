@@ -1,13 +1,8 @@
 <script>
 	import me from '../../static/me.jpg';
-	import Button from './global/Button.svelte';
+	import LinkText from './global/LinkText.svelte';
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body1 from './global/Body1.svelte';
-	import { goto } from '$app/navigation';
-
-	const onClick = () => {
-		goto('/portfolio');
-	};
 </script>
 
 <section class="pt-24 flex flex-col sm:flex-row sm:gap-16">
@@ -24,6 +19,6 @@
 			and PHP. When I’m not coding, you’ll find me cycling, hiking or skiing. I’d love you to check
 			out my work.
 		</Body1>
-		<Button clickHandler={onClick}>GO TO PORTFOLIO</Button>
+		<a href="/portfolio"><LinkText>GO TO PORTFOLIO</LinkText></a>
 	</div>
 </section>

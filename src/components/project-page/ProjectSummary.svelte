@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LinkText from './LinkText.svelte';
+	import LinkText from '../global/LinkText.svelte';
 	import Heading2 from '../global/Heading2.svelte';
 	import Body2 from '../global/Body2.svelte';
 	import { afterUpdate } from 'svelte';
