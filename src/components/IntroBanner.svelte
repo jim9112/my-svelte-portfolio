@@ -1,16 +1,11 @@
-<script>
+<script lang="ts">
 	import Heading2 from './global/Heading2.svelte';
 	import downArrows from '../../static/icons/down-arrows.svg';
+	export let heroImage: string;
 </script>
 
 <section class="flex flex-col gap-8 relative">
-	<img
-		srcset="/homepage/mobile/image-homepage-hero.jpg 311w, 
-        /homepage/tablet/image-homepage-hero.jpg 688w,
-        /homepage/desktop/image-homepage-hero.jpg 1110w"
-		sizes="90vw"
-		alt="hero"
-	/>
+	<img src={heroImage} alt="hero" />
 	<div
 		class="flex flex-col gap-8 sm:absolute sm:bottom-0 sm:left-0 sm:bg-white sm:w-[518px] sm:pt-14 sm:pr-14"
 	>

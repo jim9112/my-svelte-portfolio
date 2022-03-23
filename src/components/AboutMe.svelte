@@ -1,13 +1,14 @@
-<script>
+<script lang="ts">
 	import me from '../../static/me.jpg';
 	import LinkText from './global/LinkText.svelte';
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body1 from './global/Body1.svelte';
+	export let headshot: string;
 </script>
 
 <section class="pt-24 flex flex-col sm:flex-row sm:gap-16">
 	<div id="aboutMe" class="sm:min-w-max">
-		<img class="sm:object-cover sm:w-[281px] sm:h-[600px]" src={me} alt="James Hannan" />
+		<img class="sm:object-cover sm:w-[281px] sm:h-[600px]" src={headshot} alt="James Hannan" />
 	</div>
 	<div
 		class="flex flex-col gap-8 border-y-2 border-secondary-light-grey mt-8 sm:mt-0 py-8 sm:pt-12"
