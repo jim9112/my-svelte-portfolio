@@ -2,6 +2,7 @@
 	import MenuModal from './MenuModal.svelte';
 	import hamburgerIcon from '../../static/icons/hamburger.svg';
 	import closeIcon from '../../static/icons/close.svg';
+	import myLogo from '../../static/my-logo.png';
 	let modalopen = false;
 	const toggleModal = () => {
 		modalopen = !modalopen;
@@ -13,7 +14,7 @@
 		<MenuModal {toggleModal} />
 	{/if}
 	<div>
-		<h1 class="font-heading font-bold text-4xl">JH</h1>
+		<a href="/"><img class="h-14" src={myLogo} alt="Site Logo"></a>
 	</div>
 	<nav class="sm:flex gap-x-10 hidden">
 		<a class="hover:text-primary-cyan" href="/">HOME</a>
