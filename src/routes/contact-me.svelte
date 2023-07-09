@@ -9,7 +9,7 @@
 	import LinkedinDarkIcon from '../../static/icons/linkedin-dark.svg';
 </script>
 
-<main class="px-3 lg:px-40">
+<main class="px-3 lg:px-40 flex-1">
 	<section class="border-y-2 border-secondary-light-grey py-6 mb-6 grid grid-cols-1 md:grid-cols-2">
 		<div>
 			<Heading2>Get in Touch</Heading2>
