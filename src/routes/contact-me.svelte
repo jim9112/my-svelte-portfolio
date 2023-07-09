@@ -53,7 +53,7 @@
 				<div class="flex flex-col gap-2">
 					<label for="name">Name</label>
 					<input
-						class="bg-secondary-light-grey h-12"
+						class="bg-secondary-light-grey h-12 pl-3"
 						type="text"
 						name="name"
 						id="name"
@@ -64,7 +64,7 @@
 				<div class="flex flex-col gap-2">
 					<label for="email">Email</label>
 					<input
-						class="bg-secondary-light-grey h-12"
+						class="bg-secondary-light-grey h-12 pl-3"
 						type="email"
 						name="email"
 						id="email"
@@ -75,7 +75,7 @@
 				<div class="flex flex-col gap-2">
 					<label for="message">Message</label>
 					<textarea
-						class="bg-secondary-light-grey"
+						class="bg-secondary-light-grey pl-3 pt-2"
 						style="resize: none;"
 						name="message"
 						id="message"
