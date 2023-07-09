@@ -1,6 +1,5 @@
 <script>
 	import githubIcon from '../../static/icons/github.svg';
-	import twitterIcon from '../../static/icons/twitter.svg';
 	import linkedinIcon from '../../static/icons/linkedin.svg';
 </script>
 
@@ -15,9 +14,6 @@
 	<div class="flex gap-4 mt-14 sm:mt-0">
 		<a href="https://github.com/jim9112" target="blank"
 			><img src={githubIcon} alt="github icon" /></a
-		>
-		<a href="https://twitter.com/jim9112" target="blank"
-			><img src={twitterIcon} alt="twitter icon" /></a
 		>
 		<a href="https://www.linkedin.com/in/james-hannan-811771144/" target="blank"
 			><img src={linkedinIcon} alt="linkedin icon" /></a

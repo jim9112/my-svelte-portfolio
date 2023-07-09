@@ -6,7 +6,6 @@
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body2 from '../components/global/Body2.svelte';
 	import GithubDarkIcon from '../../static/icons/github-dark.svg';
-	import TwitterDarkIcon from '../../static/icons/twitter-dark.svg';
 	import LinkedinDarkIcon from '../../static/icons/linkedin-dark.svg';
 </script>
 
@@ -29,9 +28,6 @@
 			<div class="flex gap-4 mt-14 sm:mt-0">
 				<a href="https://github.com/jim9112" target="blank"
 					><img src={GithubDarkIcon} alt="github icon" /></a
-				>
-				<a href="https://twitter.com/jim9112" target="blank"
-					><img src={TwitterDarkIcon} alt="twitter icon" /></a
 				>
 				<a href="https://www.linkedin.com/in/james-hannan-811771144/" target="blank"
 					><img src={LinkedinDarkIcon} alt="linkedin icon" /></a
