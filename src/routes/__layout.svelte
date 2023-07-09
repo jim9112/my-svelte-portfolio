@@ -4,7 +4,7 @@
 	import Footer from '../components/Footer.svelte';
 </script>
 
-<div class="min-h-screen w-full text-primary-greyish-blue bg-secondary-very-light-grey">
+<div class="min-h-screen w-full text-primary-greyish-blue bg-secondary-very-light-grey flex flex-col justify-between">
 	<Nav />
 	<slot />
 	<Footer />
