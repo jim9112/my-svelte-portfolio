@@ -12,7 +12,7 @@
 		<Heading2>Hey, I’m Jimmy Hannan and I love building beautiful websites</Heading2>
 		<a
 			href="#aboutMe"
-			class="bg-primary-dark-blue text-secondary-very-light-grey w-[200px] flex items-center font-body text-xs"
+			class="bg-primary-dark-blue text-secondary-very-light-grey w-[200px] flex items-center font-body text-xs hover:opacity-50"
 		>
 			<div class="bg-primary-greyish-blue h-12 w-12 flex px-4 py-[18px]">
 				<img src={downArrows} alt="down arrows icon" />

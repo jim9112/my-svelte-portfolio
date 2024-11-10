@@ -85,7 +85,7 @@
 					/>
 				</div>
 				<input
-					class="bg-primary-dark-blue w-fit text-secondary-light-grey py-4 px-9"
+					class="bg-primary-dark-blue w-fit text-secondary-light-grey py-4 px-9 cursor-pointer hover:opacity-50"
 					type="submit"
 					value="SEND MESSAGE"
 				/>
