@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script lang="ts">
 	import Heading2 from '../components/global/Heading2.svelte';
 	import Body2 from '../components/global/Body2.svelte';
